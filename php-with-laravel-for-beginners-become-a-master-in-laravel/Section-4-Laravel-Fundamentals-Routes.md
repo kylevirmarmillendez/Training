@@ -30,5 +30,12 @@ Important in Laravel Files Need to know:
 **webpack** - is a wrapper and allow us to compile files
 
 
+### Laravel Routing
+
+**Routes** 
+- routes is super important in laravel because it is a way of creating a request URL for your application
+- There are several methods in routing such as GET, POST, PUT, PATCH, DELETE, and OPTIONS.
+
+
 
 
