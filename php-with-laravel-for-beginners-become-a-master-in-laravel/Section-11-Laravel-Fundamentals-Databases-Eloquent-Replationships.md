@@ -232,7 +232,7 @@ php artisan migrate
 
 - polymorphic relationships enable a model to be associated with multiple types of another model in a many-to-many connection. To find the owner in a polymorphic many-to-many relationship, you can utilize the morphToMany relationship along with the wherePivot method to conveniently access the associated models and their types.
 
-```code
+```php
 // Post.php
 class Post extends Model
 {

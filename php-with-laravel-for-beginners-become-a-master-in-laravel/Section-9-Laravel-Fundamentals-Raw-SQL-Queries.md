@@ -3,7 +3,7 @@
 ### Inserting Data
 - Using MYSQL query "insert into" then indicate the table name and the values you want to input to the database.
 
-```code
+```php
 Route::get('/insert',function(){
     DB::insert('insert into posts(title, body) values(?,?)',['PHP with Laravel','Laravel is the best thing that has happen to php']);
 });
@@ -14,7 +14,7 @@ Route::get('/insert',function(){
 - Using MYSQL query "select * from" then indicate the table name and "where id = ?" then put the id [1]
 - Since the result is array your need to iterate it to display.
 
-```code
+```php
 Route::get('/read',function(){
     $results = DB::select('select * from posts where id = ?',[1]);
 
@@ -30,7 +30,7 @@ Route::get('/read',function(){
 
 
 
-```code
+```php
 Route::get('/update', function(){
     $updated = DB::update('update posts set title = "update title no.2" where id = ?',[1]);
 

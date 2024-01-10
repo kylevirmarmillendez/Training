@@ -4,7 +4,7 @@
 
 - Reading data using the model is showing all the data inside the database.
 
-```code
+```php
 Route::get('/find',function(){
     $posts = Post::all();
 
@@ -18,7 +18,7 @@ Route::get('/find',function(){
 
 - Read a particular data where id is equal to 5, and chain with another method calle orderBy descending order then take 1 data and get the data
 
-```code
+```php
 Route::get('/findwhere',function(){
 
     $posts = Post::where('id',5)->orderBy('id','desc')->take(1)->get();
@@ -31,7 +31,7 @@ Route::get('/findwhere',function(){
 - save the Post model as a variable
 - override each data inside the "$post" then the data will be changed.
 
-```code
+```php
 Route::get('/basicinsert', function(){
     $post = new Post;
     $post->title = 'new ORM title insert';
@@ -54,7 +54,7 @@ Route::get('/basicinsert2', function(){
 - Mass Assignment or Mass input is like you assign a string to variable.
 
 
-```code
+```php
 Route::get('/create', function(){
     Post::create(['title'=>'udate kyle gwapo', 'body'=>'I am so gwapo with marjorie']);
 });
@@ -70,7 +70,7 @@ Route::get('/create', function(){
 ### Updating the Eloquent
 - Updating a specific data using update() method.
 
-```code
+```php
 Route::get('/update',function(){
     Post::where('id','3')->where('is_Admin', 0)->update(['title'=>'New old title', 'body'=>'I love cebu sheyt']);
 });
@@ -81,7 +81,7 @@ Route::get('/update',function(){
 ### Deleting Data
 - Delete a particular data using detele() method by finding the id.
 
-```code
+```php
 Route::get('/delete', function(){
     $post = Post::find(3);
 
@@ -92,7 +92,7 @@ Route::get('/delete', function(){
 
 ### Deleting a record pemanently
 - Delete all files permanently.
-```code
+```php
 Route::get('/forcedelete',function(){
     Post::where('id',3)->forcedelete();
 });
