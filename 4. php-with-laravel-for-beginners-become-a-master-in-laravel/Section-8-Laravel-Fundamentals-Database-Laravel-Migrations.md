@@ -3,7 +3,7 @@
 **Migrations** - Table generators where we can define tables and columns inside the table.
 
 **Migrations Setup** 
-- Go to .env file and changethe DB_DATABASE value to the your database.
+- Go to .env file and change the DB_DATABASE value to the your database.
 - Change the DB_USERNAME value to root
 - Leave the DB_PASSWORB blank.
 - GO to the terminal the type "php artisan migrate"

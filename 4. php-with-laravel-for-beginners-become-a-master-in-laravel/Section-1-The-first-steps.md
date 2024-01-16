@@ -1,6 +1,6 @@
 # The First Steps
 
-**Laravel** is framework that uses MVC architecture. I experience nodejs, They have similarities because nodejs also is a MVC framework but it uses JavaScript Language.
+**Laravel** is framework that uses MVC architecture. I experience nodejs, they have similarities because nodejs also is a MVC framework but it uses JavaScript Language.
 
 **MVC**
 

@@ -51,4 +51,4 @@
 - Display all the posts that are generated using factory.
 
 **Creating middlewares**
-- Since authentication has been added to the project 
+- Since authentication has been added to the project, middlewares are need to have a admin authorization so there are some routes that can be access when your are authorized.
