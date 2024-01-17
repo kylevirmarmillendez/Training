@@ -26,5 +26,9 @@
     - Application
 
 
+**Docker Daemon**
+- Is the servers that runs on your hoss operating system.
+- it only runs on linux
+
 
 
